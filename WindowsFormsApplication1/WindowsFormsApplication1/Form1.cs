@@ -16,11 +16,12 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-        //hola
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Imagen0_0_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hola");
+            
         }
+        
+        //hola
     }
 }
