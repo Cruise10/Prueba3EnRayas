@@ -63,9 +63,9 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap esferas_del_dragon {
+        internal static System.Drawing.Bitmap Esfera {
             get {
-                object obj = ResourceManager.GetObject("esferas del dragon", resourceCulture);
+                object obj = ResourceManager.GetObject("Esfera", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

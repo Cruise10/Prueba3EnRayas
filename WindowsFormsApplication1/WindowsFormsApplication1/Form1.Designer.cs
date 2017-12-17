@@ -46,6 +46,10 @@
             this.Imagen1_1 = new System.Windows.Forms.PictureBox();
             this.Imagen0_1 = new System.Windows.Forms.PictureBox();
             this.Imagen2_1 = new System.Windows.Forms.PictureBox();
+            this.esferaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.esferaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen0_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen0_2)).BeginInit();
@@ -75,15 +79,22 @@
             this.nuevoJuego.Name = "nuevoJuego";
             this.nuevoJuego.Size = new System.Drawing.Size(88, 20);
             this.nuevoJuego.Text = "Nuevo Juego";
+            this.nuevoJuego.Click += new System.EventHandler(this.nuevoJuego_Click);
             // 
             // jugador1
             // 
+            this.jugador1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.esferaToolStripMenuItem,
+            this.exisToolStripMenuItem});
             this.jugador1.Name = "jugador1";
             this.jugador1.Size = new System.Drawing.Size(70, 20);
             this.jugador1.Text = "Jugador 1";
             // 
             // jugador2
             // 
+            this.jugador2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.esferaToolStripMenuItem1,
+            this.exisToolStripMenuItem1});
             this.jugador2.Name = "jugador2";
             this.jugador2.Size = new System.Drawing.Size(70, 20);
             this.jugador2.Text = "Jugador 2";
@@ -144,6 +155,7 @@
             this.Imagen0_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen0_2.TabIndex = 6;
             this.Imagen0_2.TabStop = false;
+            this.Imagen0_2.Click += new System.EventHandler(this.Imagen0_2_Click);
             // 
             // Imagen1_2
             // 
@@ -154,6 +166,7 @@
             this.Imagen1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen1_2.TabIndex = 7;
             this.Imagen1_2.TabStop = false;
+            this.Imagen1_2.Click += new System.EventHandler(this.Imagen1_2_Click);
             // 
             // Imagen2_2
             // 
@@ -164,6 +177,7 @@
             this.Imagen2_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen2_2.TabIndex = 8;
             this.Imagen2_2.TabStop = false;
+            this.Imagen2_2.Click += new System.EventHandler(this.Imagen2_2_Click);
             // 
             // Imagen1_0
             // 
@@ -174,6 +188,7 @@
             this.Imagen1_0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen1_0.TabIndex = 9;
             this.Imagen1_0.TabStop = false;
+            this.Imagen1_0.Click += new System.EventHandler(this.Imagen1_0_Click);
             // 
             // Imagen2_0
             // 
@@ -184,6 +199,7 @@
             this.Imagen2_0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen2_0.TabIndex = 10;
             this.Imagen2_0.TabStop = false;
+            this.Imagen2_0.Click += new System.EventHandler(this.Imagen2_0_Click);
             // 
             // Imagen1_1
             // 
@@ -194,6 +210,7 @@
             this.Imagen1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen1_1.TabIndex = 11;
             this.Imagen1_1.TabStop = false;
+            this.Imagen1_1.Click += new System.EventHandler(this.Imagen1_1_Click);
             // 
             // Imagen0_1
             // 
@@ -204,6 +221,7 @@
             this.Imagen0_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen0_1.TabIndex = 12;
             this.Imagen0_1.TabStop = false;
+            this.Imagen0_1.Click += new System.EventHandler(this.Imagen0_1_Click);
             // 
             // Imagen2_1
             // 
@@ -214,6 +232,35 @@
             this.Imagen2_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Imagen2_1.TabIndex = 13;
             this.Imagen2_1.TabStop = false;
+            this.Imagen2_1.Click += new System.EventHandler(this.Imagen2_1_Click);
+            // 
+            // esferaToolStripMenuItem
+            // 
+            this.esferaToolStripMenuItem.Name = "esferaToolStripMenuItem";
+            this.esferaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.esferaToolStripMenuItem.Text = "Esfera";
+            this.esferaToolStripMenuItem.Click += new System.EventHandler(this.esferaToolStripMenuItem_Click);
+            // 
+            // exisToolStripMenuItem
+            // 
+            this.exisToolStripMenuItem.Name = "exisToolStripMenuItem";
+            this.exisToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exisToolStripMenuItem.Text = "Exis";
+            this.exisToolStripMenuItem.Click += new System.EventHandler(this.exisToolStripMenuItem_Click);
+            // 
+            // esferaToolStripMenuItem1
+            // 
+            this.esferaToolStripMenuItem1.Name = "esferaToolStripMenuItem1";
+            this.esferaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.esferaToolStripMenuItem1.Text = "Esfera";
+            this.esferaToolStripMenuItem1.Click += new System.EventHandler(this.esferaToolStripMenuItem1_Click);
+            // 
+            // exisToolStripMenuItem1
+            // 
+            this.exisToolStripMenuItem1.Name = "exisToolStripMenuItem1";
+            this.exisToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.exisToolStripMenuItem1.Text = "Exis";
+            this.exisToolStripMenuItem1.Click += new System.EventHandler(this.exisToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -273,6 +320,10 @@
         private System.Windows.Forms.PictureBox Imagen1_1;
         private System.Windows.Forms.PictureBox Imagen0_1;
         private System.Windows.Forms.PictureBox Imagen2_1;
+        private System.Windows.Forms.ToolStripMenuItem esferaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem esferaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exisToolStripMenuItem1;
 
 
     }
