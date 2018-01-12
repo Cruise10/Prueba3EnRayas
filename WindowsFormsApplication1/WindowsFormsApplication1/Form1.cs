@@ -12,129 +12,37 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        int turno = 1;
+        int Puntos_Player1 = 0;
+        int Puntos_Player2 = 0;
+        int[,] Gato;
+        bool ExisteGanador;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        public string jugador_1;
-        public string jugador_2;
-        //Fila 0
-        private void Imagen0_0_Click(object sender, EventArgs e)
+        public void IniciarJuego()
         {
-            this.Imagen0_0.Image = global::WindowsFormsApplication1.Properties.Resources.x;
-            funcion_Ocupado();
-        }
-
-        private void Imagen0_1_Click(object sender, EventArgs e)
-        {
-            this.Imagen0_0.Image = global::WindowsFormsApplication1.Properties.Resources.x;
-            
-        }
-
-        private void Imagen0_2_Click(object sender, EventArgs e)
-        {
-            this.Imagen0_0.Image = global::WindowsFormsApplication1.Properties.Resources.x;
-        }
-
-        //Fila 1_0
-        private void Imagen1_0_Click(object sender, EventArgs e)
-        {
-            this.Imagen1_0.Image = global::WindowsFormsApplication1.Properties.Resources.x;
-        }
-
-        private void Imagen1_1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Imagen1_2_Click(object sender, EventArgs e)
-        {
-
-        }
-        
-        //Fila 2_0
-        private void Imagen2_0_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Imagen2_1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Imagen2_2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void esferaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            esferaToolStripMenuItem.ForeColor = Color.Blue;
-            esferaToolStripMenuItem1.Enabled = false;
-            exisToolStripMenuItem1.ForeColor = Color.Red;
-            //esferaToolStripMenuItem1.Font = new Font(esferaToolStripMenuItem1.Font, FontStyle.Bold);
-            //esferaToolStripMenuItem1.Text = BackColor.Blue;
-            
-            
-            exisToolStripMenuItem.Enabled = false;
-        }
-
-        private void exisToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            exisToolStripMenuItem.ForeColor = Color.Red;
-            esferaToolStripMenuItem.Enabled = false;
-            esferaToolStripMenuItem1.ForeColor = Color.Blue;
-            exisToolStripMenuItem1.Enabled = false;                
-        }
-
-        private void esferaToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            exisToolStripMenuItem1.Enabled = false;
-            esferaToolStripMenuItem.Enabled = false;
-            esferaToolStripMenuItem1.ForeColor = Color.Blue;
-            exisToolStripMenuItem.ForeColor = Color.Red;
-        }
-
-        private void exisToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            exisToolStripMenuItem1.ForeColor = Color.Red;
-            esferaToolStripMenuItem1.Enabled = false;
-            esferaToolStripMenuItem.ForeColor = Color.Blue;
-            exisToolStripMenuItem.Enabled = false;
-        }
-
-        private void nuevoJuego_Click(object sender, EventArgs e)
-        {
-            esferaToolStripMenuItem.Enabled = true;
-            exisToolStripMenuItem.Enabled = true;
-            esferaToolStripMenuItem1.Enabled = true;
-            exisToolStripMenuItem1.Enabled = true;
-
-            esferaToolStripMenuItem.ForeColor = Color.Black;
-            esferaToolStripMenuItem1.ForeColor = Color.Black;
-            exisToolStripMenuItem.ForeColor = Color.Black;
-            exisToolStripMenuItem1.ForeColor = Color.Black;
+            //Inicia valores en Juego
+            turno = 1;
+            Gato = new int [3, 3];
+            ExisteGanador = false;
 
 
-        }
+            picGanador.Image = Properties.Resources.pelota;
+            FichaTicTacToe.Controls.Clear();
 
-        public void funcion_Ocupado()
-        {
-            if (this.Imagen0_0.Image != null)
+            //Arreglos para mostrar Fichas y meter valores en una matriz
+
+            for (int i = 0; i < 3; i++)
             {
-                MessageBox.Show("si");
-            }
-            else { MessageBox.Show("no"); }
+                for (int j = 0; j < 3; j++)
+                {
 
-            if (this.Imagen0_1.Image != null)
-            {
-                MessageBox.Show("si");
+                }
             }
-            else { MessageBox.Show("no"); }
         }
-        
-        //hola
     }
 }
